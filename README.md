@@ -6,7 +6,7 @@ Autor: Kevin Osmar Núñez Manríquez
 Se usó **transferencia de aprendizaje** con **MobileNetV2** (preentrenada en ImageNet) para clasificar fotos de aves en 525 especies. El modelo se entrenó en el clúster **YUCA** de la UNISON con un ambiente de conda propio, y después se exportó a TensorFlow.js para usarlo desde el celular.
 
 - **Aplicación web (celular):** https://kevinnunez-bit.github.io/aves-tl/
-- **Artículo en Medium:** _(pendiente)_
+- **Artículo en Medium:** https://medium.com/@kevinosmar/reconociendo-525-especies-de-aves-con-transferencia-de-aprendizaje-4fa0f25b9b99
 
 ## Dataset
 
