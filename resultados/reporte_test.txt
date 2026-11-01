@@ -1,0 +1,531 @@
+                               precision    recall  f1-score   support
+
+              ABBOTTS BABBLER       1.00      0.80      0.89         5
+                ABBOTTS BOOBY       1.00      1.00      1.00         5
+   ABYSSINIAN GROUND HORNBILL       1.00      1.00      1.00         5
+        AFRICAN CROWNED CRANE       1.00      1.00      1.00         5
+       AFRICAN EMERALD CUCKOO       1.00      1.00      1.00         5
+            AFRICAN FIREFINCH       1.00      1.00      1.00         5
+       AFRICAN OYSTER CATCHER       1.00      1.00      1.00         5
+        AFRICAN PIED HORNBILL       1.00      1.00      1.00         5
+          AFRICAN PYGMY GOOSE       1.00      1.00      1.00         5
+                    ALBATROSS       1.00      1.00      1.00         5
+               ALBERTS TOWHEE       1.00      1.00      1.00         5
+         ALEXANDRINE PARAKEET       1.00      1.00      1.00         5
+                ALPINE CHOUGH       1.00      1.00      1.00         5
+        ALTAMIRA YELLOWTHROAT       1.00      0.80      0.89         5
+              AMERICAN AVOCET       1.00      1.00      1.00         5
+             AMERICAN BITTERN       1.00      1.00      1.00         5
+                AMERICAN COOT       1.00      1.00      1.00         5
+              AMERICAN DIPPER       1.00      1.00      1.00         5
+            AMERICAN FLAMINGO       1.00      1.00      1.00         5
+           AMERICAN GOLDFINCH       0.83      1.00      0.91         5
+             AMERICAN KESTREL       1.00      1.00      1.00         5
+               AMERICAN PIPIT       1.00      0.80      0.89         5
+            AMERICAN REDSTART       1.00      0.80      0.89         5
+               AMERICAN ROBIN       1.00      1.00      1.00         5
+              AMERICAN WIGEON       0.80      0.80      0.80         5
+            AMETHYST WOODSTAR       0.62      1.00      0.77         5
+                 ANDEAN GOOSE       1.00      0.80      0.89         5
+               ANDEAN LAPWING       1.00      1.00      1.00         5
+                ANDEAN SISKIN       0.83      1.00      0.91         5
+                      ANHINGA       1.00      1.00      1.00         5
+                     ANIANIAU       1.00      0.80      0.89         5
+            ANNAS HUMMINGBIRD       1.00      1.00      1.00         5
+                      ANTBIRD       1.00      1.00      1.00         5
+           ANTILLEAN EUPHONIA       1.00      1.00      1.00         5
+                      APAPANE       1.00      1.00      1.00         5
+                  APOSTLEBIRD       0.83      1.00      0.91         5
+              ARARIPE MANAKIN       1.00      1.00      1.00         5
+            ASHY STORM PETREL       1.00      0.40      0.57         5
+              ASHY THRUSHBIRD       0.83      1.00      0.91         5
+           ASIAN CRESTED IBIS       1.00      1.00      1.00         5
+           ASIAN DOLLARD BIRD       1.00      1.00      1.00         5
+        ASIAN GREEN BEE EATER       0.83      1.00      0.91         5
+         ASIAN OPENBILL STORK       0.71      1.00      0.83         5
+                AUCKLAND SHAQ       0.83      1.00      0.91         5
+            AUSTRAL CANASTERO       0.75      0.60      0.67         5
+         AUSTRALASIAN FIGBIRD       1.00      1.00      1.00         5
+                     AVADAVAT       1.00      1.00      1.00         5
+             AZARAS SPINETAIL       1.00      1.00      1.00         5
+         AZURE BREASTED PITTA       1.00      1.00      1.00         5
+                    AZURE JAY       0.71      1.00      0.83         5
+                AZURE TANAGER       1.00      0.80      0.89         5
+                    AZURE TIT       1.00      1.00      1.00         5
+                  BAIKAL TEAL       1.00      1.00      1.00         5
+                   BALD EAGLE       1.00      1.00      1.00         5
+                    BALD IBIS       0.83      1.00      0.91         5
+                BALI STARLING       1.00      1.00      1.00         5
+             BALTIMORE ORIOLE       1.00      0.60      0.75         5
+                   BANANAQUIT       1.00      1.00      1.00         5
+             BAND TAILED GUAN       0.80      0.80      0.80         5
+             BANDED BROADBILL       1.00      1.00      1.00         5
+                  BANDED PITA       1.00      1.00      1.00         5
+                 BANDED STILT       0.83      1.00      0.91         5
+            BAR-TAILED GODWIT       0.75      0.60      0.67         5
+                     BARN OWL       1.00      1.00      1.00         5
+                 BARN SWALLOW       1.00      1.00      1.00         5
+              BARRED PUFFBIRD       1.00      1.00      1.00         5
+            BARROWS GOLDENEYE       1.00      0.80      0.89         5
+         BAY-BREASTED WARBLER       1.00      1.00      1.00         5
+               BEARDED BARBET       1.00      1.00      1.00         5
+             BEARDED BELLBIRD       1.00      1.00      1.00         5
+             BEARDED REEDLING       0.83      1.00      0.91         5
+            BELTED KINGFISHER       1.00      1.00      1.00         5
+             BIRD OF PARADISE       1.00      1.00      1.00         5
+   BLACK AND YELLOW BROADBILL       1.00      1.00      1.00         5
+                   BLACK BAZA       1.00      1.00      1.00         5
+      BLACK BREASTED PUFFBIRD       1.00      1.00      1.00         5
+                BLACK COCKATO       1.00      1.00      1.00         5
+        BLACK FACED SPOONBILL       0.71      1.00      0.83         5
+              BLACK FRANCOLIN       1.00      1.00      1.00         5
+          BLACK HEADED CAIQUE       1.00      1.00      1.00         5
+           BLACK NECKED STILT       1.00      0.40      0.57         5
+                BLACK SKIMMER       1.00      0.80      0.89         5
+                   BLACK SWAN       1.00      1.00      1.00         5
+             BLACK TAIL CRAKE       1.00      1.00      1.00         5
+       BLACK THROATED BUSHTIT       1.00      1.00      1.00         5
+          BLACK THROATED HUET       1.00      0.80      0.89         5
+       BLACK THROATED WARBLER       1.00      0.80      0.89         5
+      BLACK VENTED SHEARWATER       1.00      0.80      0.89         5
+                BLACK VULTURE       1.00      1.00      1.00         5
+       BLACK-CAPPED CHICKADEE       1.00      1.00      1.00         5
+           BLACK-NECKED GREBE       0.83      1.00      0.91         5
+       BLACK-THROATED SPARROW       1.00      1.00      1.00         5
+         BLACKBURNIAM WARBLER       1.00      0.60      0.75         5
+    BLONDE CRESTED WOODPECKER       1.00      1.00      1.00         5
+               BLOOD PHEASANT       1.00      1.00      1.00         5
+                    BLUE COAU       1.00      0.80      0.89         5
+                  BLUE DACNIS       1.00      0.40      0.57         5
+        BLUE GRAY GNATCATCHER       1.00      0.80      0.89         5
+                BLUE GROSBEAK       1.00      1.00      1.00         5
+                  BLUE GROUSE       1.00      1.00      1.00         5
+                   BLUE HERON       0.83      1.00      0.91         5
+                 BLUE MALKOHA       1.00      0.80      0.89         5
+    BLUE THROATED PIPING GUAN       1.00      1.00      1.00         5
+       BLUE THROATED TOUCANET       1.00      1.00      1.00         5
+                     BOBOLINK       1.00      1.00      1.00         5
+          BORNEAN BRISTLEHEAD       1.00      1.00      1.00         5
+             BORNEAN LEAFBIRD       1.00      0.80      0.89         5
+             BORNEAN PHEASANT       1.00      1.00      1.00         5
+             BRANDT CORMARANT       1.00      1.00      1.00         5
+            BREWERS BLACKBIRD       1.00      0.80      0.89         5
+                BROWN CREPPER       1.00      1.00      1.00         5
+         BROWN HEADED COWBIRD       0.71      1.00      0.83         5
+                  BROWN NOODY       0.71      1.00      0.83         5
+               BROWN THRASHER       0.83      1.00      0.91         5
+                   BUFFLEHEAD       1.00      1.00      1.00         5
+             BULWERS PHEASANT       1.00      1.00      1.00         5
+            BURCHELLS COURSER       1.00      1.00      1.00         5
+                  BUSH TURKEY       1.00      0.80      0.89         5
+           CAATINGA CACHOLOTE       1.00      1.00      1.00         5
+              CABOTS TRAGOPAN       1.00      1.00      1.00         5
+                  CACTUS WREN       1.00      1.00      1.00         5
+            CALIFORNIA CONDOR       1.00      0.80      0.89         5
+              CALIFORNIA GULL       1.00      1.00      1.00         5
+             CALIFORNIA QUAIL       1.00      1.00      1.00         5
+                CAMPO FLICKER       1.00      1.00      1.00         5
+                       CANARY       1.00      1.00      1.00         5
+                   CANVASBACK       1.00      0.80      0.89         5
+         CAPE GLOSSY STARLING       1.00      1.00      1.00         5
+                CAPE LONGCLAW       1.00      1.00      1.00         5
+             CAPE MAY WARBLER       0.57      0.80      0.67         5
+             CAPE ROCK THRUSH       1.00      1.00      1.00         5
+                 CAPPED HERON       1.00      1.00      1.00         5
+                 CAPUCHINBIRD       1.00      1.00      1.00         5
+            CARMINE BEE-EATER       1.00      1.00      1.00         5
+                 CASPIAN TERN       1.00      1.00      1.00         5
+                    CASSOWARY       1.00      0.80      0.89         5
+                CEDAR WAXWING       0.83      1.00      0.91         5
+             CERULEAN WARBLER       0.83      1.00      0.91         5
+              CHARA DE COLLAR       1.00      1.00      1.00         5
+              CHATTERING LORY       1.00      1.00      1.00         5
+    CHESTNET BELLIED EUPHONIA       0.83      1.00      0.91         5
+       CHESTNUT WINGED CUCKOO       1.00      0.80      0.89         5
+     CHINESE BAMBOO PARTRIDGE       1.00      1.00      1.00         5
+           CHINESE POND HERON       1.00      1.00      1.00         5
+             CHIPPING SPARROW       1.00      1.00      1.00         5
+              CHUCAO TAPACULO       0.71      1.00      0.83         5
+             CHUKAR PARTRIDGE       1.00      1.00      1.00         5
+              CINNAMON ATTILA       0.71      1.00      0.83         5
+          CINNAMON FLYCATCHER       1.00      1.00      1.00         5
+                CINNAMON TEAL       1.00      1.00      1.00         5
+                 CLARKS GREBE       1.00      0.80      0.89         5
+            CLARKS NUTCRACKER       0.83      1.00      0.91         5
+            COCK OF THE  ROCK       1.00      1.00      1.00         5
+                     COCKATOO       1.00      1.00      1.00         5
+             COLLARED ARACARI       1.00      1.00      1.00         5
+       COLLARED CRESCENTCHEST       1.00      1.00      1.00         5
+             COMMON FIRECREST       1.00      0.80      0.89         5
+               COMMON GRACKLE       1.00      1.00      1.00         5
+          COMMON HOUSE MARTIN       0.83      1.00      0.91         5
+                  COMMON IORA       1.00      1.00      1.00         5
+                  COMMON LOON       1.00      1.00      1.00         5
+              COMMON POORWILL       1.00      1.00      1.00         5
+              COMMON STARLING       1.00      1.00      1.00         5
+           COPPERSMITH BARBET       1.00      1.00      1.00         5
+        COPPERY TAILED COUCAL       0.83      1.00      0.91         5
+                  CRAB PLOVER       1.00      1.00      1.00         5
+                   CRANE HAWK       1.00      1.00      1.00         5
+     CREAM COLORED WOODPECKER       1.00      1.00      1.00         5
+               CRESTED AUKLET       1.00      1.00      1.00         5
+             CRESTED CARACARA       1.00      1.00      1.00         5
+                 CRESTED COUA       1.00      1.00      1.00         5
+             CRESTED FIREBACK       1.00      1.00      1.00         5
+           CRESTED KINGFISHER       1.00      1.00      1.00         5
+             CRESTED NUTHATCH       1.00      1.00      1.00         5
+           CRESTED OROPENDOLA       1.00      1.00      1.00         5
+        CRESTED SERPENT EAGLE       1.00      0.80      0.89         5
+            CRESTED SHRIKETIT       1.00      0.80      0.89         5
+       CRESTED WOOD PARTRIDGE       1.00      1.00      1.00         5
+                 CRIMSON CHAT       1.00      1.00      1.00         5
+              CRIMSON SUNBIRD       1.00      1.00      1.00         5
+                         CROW       1.00      1.00      1.00         5
+                   CUBAN TODY       1.00      1.00      1.00         5
+                 CUBAN TROGON       1.00      1.00      1.00         5
+         CURL CRESTED ARACURI       1.00      1.00      1.00         5
+             D-ARNAUDS BARBET       1.00      1.00      1.00         5
+            DALMATIAN PELICAN       0.83      1.00      0.91         5
+        DARJEELING WOODPECKER       1.00      1.00      1.00         5
+              DARK EYED JUNCO       1.00      1.00      1.00         5
+             DAURIAN REDSTART       0.83      1.00      0.91         5
+             DEMOISELLE CRANE       1.00      1.00      1.00         5
+          DOUBLE BARRED FINCH       1.00      1.00      1.00         5
+     DOUBLE BRESTED CORMARANT       1.00      0.80      0.89         5
+       DOUBLE EYED FIG PARROT       1.00      1.00      1.00         5
+             DOWNY WOODPECKER       1.00      1.00      1.00         5
+                       DUNLIN       1.00      1.00      1.00         5
+                   DUSKY LORY       0.83      1.00      0.91         5
+                  DUSKY ROBIN       0.45      1.00      0.62         5
+                   EARED PITA       1.00      1.00      1.00         5
+             EASTERN BLUEBIRD       0.83      1.00      0.91         5
+           EASTERN BLUEBONNET       1.00      0.80      0.89         5
+        EASTERN GOLDEN WEAVER       1.00      1.00      1.00         5
+           EASTERN MEADOWLARK       1.00      1.00      1.00         5
+              EASTERN ROSELLA       1.00      1.00      1.00         5
+                EASTERN TOWEE       1.00      1.00      1.00         5
+        EASTERN WIP POOR WILL       1.00      0.80      0.89         5
+         EASTERN YELLOW ROBIN       0.83      1.00      0.91         5
+          ECUADORIAN HILLSTAR       0.83      1.00      0.91         5
+               EGYPTIAN GOOSE       1.00      1.00      1.00         5
+               ELEGANT TROGON       1.00      0.80      0.89         5
+            ELLIOTS  PHEASANT       1.00      1.00      1.00         5
+              EMERALD TANAGER       1.00      1.00      1.00         5
+              EMPEROR PENGUIN       1.00      1.00      1.00         5
+                          EMU       1.00      1.00      1.00         5
+                 ENGGANO MYNA       1.00      1.00      1.00         5
+           EURASIAN BULLFINCH       1.00      1.00      1.00         5
+       EURASIAN GOLDEN ORIOLE       1.00      0.60      0.75         5
+              EURASIAN MAGPIE       1.00      1.00      1.00         5
+           EUROPEAN GOLDFINCH       1.00      0.80      0.89         5
+         EUROPEAN TURTLE DOVE       1.00      1.00      1.00         5
+             EVENING GROSBEAK       1.00      1.00      1.00         5
+               FAIRY BLUEBIRD       1.00      1.00      1.00         5
+                FAIRY PENGUIN       1.00      1.00      1.00         5
+                   FAIRY TERN       1.00      1.00      1.00         5
+             FAN TAILED WIDOW       1.00      1.00      1.00         5
+               FASCIATED WREN       1.00      1.00      1.00         5
+                FIERY MINIVET       1.00      1.00      1.00         5
+            FIORDLAND PENGUIN       1.00      1.00      1.00         5
+        FIRE TAILLED MYZORNIS       1.00      1.00      1.00         5
+              FLAME BOWERBIRD       1.00      1.00      1.00         5
+                FLAME TANAGER       1.00      1.00      1.00         5
+               FOREST WAGTAIL       1.00      1.00      1.00         5
+                      FRIGATE       1.00      1.00      1.00         5
+            FRILL BACK PIGEON       1.00      1.00      1.00         5
+                GAMBELS QUAIL       1.00      1.00      1.00         5
+           GANG GANG COCKATOO       1.00      1.00      1.00         5
+              GILA WOODPECKER       1.00      1.00      1.00         5
+               GILDED FLICKER       1.00      0.60      0.75         5
+                  GLOSSY IBIS       1.00      1.00      1.00         5
+                 GO AWAY BIRD       1.00      0.80      0.89         5
+            GOLD WING WARBLER       0.83      1.00      0.91         5
+            GOLDEN BOWER BIRD       1.00      1.00      1.00         5
+       GOLDEN CHEEKED WARBLER       1.00      1.00      1.00         5
+          GOLDEN CHLOROPHONIA       1.00      1.00      1.00         5
+                 GOLDEN EAGLE       1.00      1.00      1.00         5
+              GOLDEN PARAKEET       1.00      1.00      1.00         5
+              GOLDEN PHEASANT       1.00      1.00      1.00         5
+                 GOLDEN PIPIT       1.00      1.00      1.00         5
+               GOULDIAN FINCH       1.00      1.00      1.00         5
+                     GRANDALA       0.83      1.00      0.91         5
+                 GRAY CATBIRD       1.00      0.80      0.89         5
+                GRAY KINGBIRD       1.00      1.00      1.00         5
+               GRAY PARTRIDGE       1.00      0.60      0.75         5
+                  GREAT ARGUS       1.00      0.80      0.89         5
+               GREAT GRAY OWL       1.00      1.00      1.00         5
+                GREAT JACAMAR       1.00      0.60      0.75         5
+               GREAT KISKADEE       1.00      0.80      0.89         5
+                  GREAT POTOO       1.00      0.60      0.75         5
+                GREAT TINAMOU       1.00      1.00      1.00         5
+                 GREAT XENOPS       1.00      0.40      0.57         5
+                GREATER PEWEE       1.00      1.00      1.00         5
+      GREATER PRAIRIE CHICKEN       1.00      1.00      1.00         5
+          GREATOR SAGE GROUSE       0.83      1.00      0.91         5
+              GREEN BROADBILL       1.00      1.00      1.00         5
+                    GREEN JAY       1.00      1.00      1.00         5
+                 GREEN MAGPIE       1.00      1.00      1.00         5
+            GREEN WINGED DOVE       1.00      1.00      1.00         5
+            GREY CUCKOOSHRIKE       0.83      1.00      0.91         5
+       GREY HEADED CHACHALACA       0.83      1.00      0.91         5
+       GREY HEADED FISH EAGLE       1.00      1.00      1.00         5
+                  GREY PLOVER       1.00      1.00      1.00         5
+            GROVED BILLED ANI       0.83      1.00      0.91         5
+                GUINEA TURACO       0.83      1.00      0.91         5
+                   GUINEAFOWL       1.00      1.00      1.00         5
+                GURNEYS PITTA       1.00      1.00      1.00         5
+                    GYRFALCON       1.00      1.00      1.00         5
+                     HAMERKOP       1.00      1.00      1.00         5
+               HARLEQUIN DUCK       0.83      1.00      0.91         5
+              HARLEQUIN QUAIL       1.00      1.00      1.00         5
+                  HARPY EAGLE       1.00      1.00      1.00         5
+               HAWAIIAN GOOSE       1.00      1.00      1.00         5
+                     HAWFINCH       1.00      1.00      1.00         5
+                 HELMET VANGA       1.00      1.00      1.00         5
+              HEPATIC TANAGER       1.00      1.00      1.00         5
+           HIMALAYAN BLUETAIL       0.83      1.00      0.91         5
+              HIMALAYAN MONAL       1.00      1.00      1.00         5
+                      HOATZIN       1.00      1.00      1.00         5
+             HOODED MERGANSER       0.83      1.00      0.91         5
+                      HOOPOES       1.00      1.00      1.00         5
+                  HORNED GUAN       1.00      1.00      1.00         5
+                  HORNED LARK       1.00      1.00      1.00         5
+                HORNED SUNGEM       1.00      1.00      1.00         5
+                  HOUSE FINCH       1.00      0.40      0.57         5
+                HOUSE SPARROW       1.00      1.00      1.00         5
+               HYACINTH MACAW       0.83      1.00      0.91         5
+               IBERIAN MAGPIE       1.00      1.00      1.00         5
+                     IBISBILL       1.00      1.00      1.00         5
+                IMPERIAL SHAQ       1.00      0.80      0.89         5
+                    INCA TERN       1.00      1.00      1.00         5
+               INDIAN BUSTARD       1.00      1.00      1.00         5
+                 INDIAN PITTA       1.00      1.00      1.00         5
+                INDIAN ROLLER       1.00      1.00      1.00         5
+               INDIAN VULTURE       1.00      1.00      1.00         5
+               INDIGO BUNTING       1.00      0.40      0.57         5
+            INDIGO FLYCATCHER       0.50      1.00      0.67         5
+              INLAND DOTTEREL       1.00      1.00      1.00         5
+         IVORY BILLED ARACARI       1.00      1.00      1.00         5
+                   IVORY GULL       0.83      1.00      0.91         5
+                          IWI       1.00      1.00      1.00         5
+                       JABIRU       1.00      1.00      1.00         5
+                   JACK SNIPE       1.00      1.00      1.00         5
+               JACOBIN PIGEON       1.00      1.00      1.00         5
+             JANDAYA PARAKEET       1.00      1.00      1.00         5
+               JAPANESE ROBIN       1.00      1.00      1.00         5
+                 JAVA SPARROW       1.00      1.00      1.00         5
+            JOCOTOCO ANTPITTA       1.00      1.00      1.00         5
+                         KAGU       1.00      1.00      1.00         5
+                       KAKAPO       1.00      1.00      1.00         5
+                     KILLDEAR       1.00      1.00      1.00         5
+                   KING EIDER       1.00      1.00      1.00         5
+                 KING VULTURE       1.00      1.00      1.00         5
+                         KIWI       1.00      1.00      1.00         5
+             KNOB BILLED DUCK       1.00      1.00      1.00         5
+                   KOOKABURRA       1.00      1.00      1.00         5
+                 LARK BUNTING       1.00      1.00      1.00         5
+                LAUGHING GULL       0.83      1.00      0.91         5
+               LAZULI BUNTING       1.00      1.00      1.00         5
+              LESSER ADJUTANT       1.00      1.00      1.00         5
+                 LILAC ROLLER       1.00      1.00      1.00         5
+                      LIMPKIN       1.00      1.00      1.00         5
+                   LITTLE AUK       1.00      1.00      1.00         5
+            LOGGERHEAD SHRIKE       1.00      0.80      0.89         5
+               LONG-EARED OWL       1.00      1.00      1.00         5
+                 LOONEY BIRDS       1.00      1.00      1.00         5
+          LUCIFER HUMMINGBIRD       1.00      0.80      0.89         5
+                 MAGPIE GOOSE       0.83      1.00      0.91         5
+             MALABAR HORNBILL       1.00      1.00      1.00         5
+         MALACHITE KINGFISHER       1.00      0.80      0.89         5
+           MALAGASY WHITE EYE       1.00      1.00      1.00         5
+                        MALEO       1.00      1.00      1.00         5
+                 MALLARD DUCK       1.00      1.00      1.00         5
+                 MANDRIN DUCK       1.00      1.00      1.00         5
+              MANGROVE CUCKOO       0.71      1.00      0.83         5
+                MARABOU STORK       1.00      1.00      1.00         5
+              MASKED BOBWHITE       1.00      0.80      0.89         5
+                 MASKED BOOBY       1.00      1.00      1.00         5
+               MASKED LAPWING       1.00      1.00      1.00         5
+               MCKAYS BUNTING       1.00      0.80      0.89         5
+                       MERLIN       1.00      1.00      1.00         5
+             MIKADO  PHEASANT       1.00      1.00      1.00         5
+               MILITARY MACAW       1.00      1.00      1.00         5
+                MOURNING DOVE       1.00      0.80      0.89         5
+                         MYNA       1.00      1.00      1.00         5
+               NICOBAR PIGEON       1.00      1.00      1.00         5
+              NOISY FRIARBIRD       1.00      1.00      1.00         5
+NORTHERN BEARDLESS TYRANNULET       0.80      0.80      0.80         5
+            NORTHERN CARDINAL       1.00      0.80      0.89         5
+             NORTHERN FLICKER       0.71      1.00      0.83         5
+              NORTHERN FULMAR       0.56      1.00      0.71         5
+              NORTHERN GANNET       1.00      1.00      1.00         5
+             NORTHERN GOSHAWK       1.00      0.80      0.89         5
+              NORTHERN JACANA       1.00      1.00      1.00         5
+         NORTHERN MOCKINGBIRD       1.00      0.40      0.57         5
+              NORTHERN PARULA       1.00      1.00      1.00         5
+          NORTHERN RED BISHOP       0.83      1.00      0.91         5
+            NORTHERN SHOVELER       1.00      1.00      1.00         5
+             OCELLATED TURKEY       1.00      1.00      1.00         5
+                      OILBIRD       1.00      1.00      1.00         5
+                 OKINAWA RAIL       1.00      1.00      1.00         5
+       ORANGE BREASTED TROGON       1.00      1.00      1.00         5
+       ORANGE BRESTED BUNTING       1.00      1.00      1.00         5
+             ORIENTAL BAY OWL       1.00      1.00      1.00         5
+            ORNATE HAWK EAGLE       1.00      0.80      0.89         5
+                       OSPREY       1.00      0.80      0.89         5
+                      OSTRICH       1.00      1.00      1.00         5
+                     OVENBIRD       0.80      0.80      0.80         5
+               OYSTER CATCHER       1.00      1.00      1.00         5
+              PAINTED BUNTING       1.00      1.00      1.00         5
+                       PALILA       0.71      1.00      0.83         5
+             PALM NUT VULTURE       1.00      1.00      1.00         5
+             PARADISE TANAGER       1.00      1.00      1.00         5
+              PARAKETT AUKLET       1.00      1.00      1.00         5
+                  PARUS MAJOR       0.83      1.00      0.91         5
+      PATAGONIAN SIERRA FINCH       1.00      1.00      1.00         5
+                      PEACOCK       1.00      1.00      1.00         5
+             PEREGRINE FALCON       1.00      1.00      1.00         5
+                  PHAINOPEPLA       1.00      1.00      1.00         5
+             PHILIPPINE EAGLE       1.00      1.00      1.00         5
+                   PINK ROBIN       1.00      1.00      1.00         5
+            PLUSH CRESTED JAY       1.00      1.00      1.00         5
+              POMARINE JAEGER       1.00      0.80      0.89         5
+                       PUFFIN       1.00      1.00      1.00         5
+                    PUNA TEAL       1.00      1.00      1.00         5
+                 PURPLE FINCH       0.62      1.00      0.77         5
+             PURPLE GALLINULE       1.00      1.00      1.00         5
+                PURPLE MARTIN       1.00      1.00      1.00         5
+              PURPLE SWAMPHEN       1.00      1.00      1.00         5
+             PYGMY KINGFISHER       0.71      1.00      0.83         5
+                  PYRRHULOXIA       0.83      1.00      0.91         5
+                      QUETZAL       1.00      1.00      1.00         5
+             RAINBOW LORIKEET       1.00      1.00      1.00         5
+                    RAZORBILL       1.00      0.80      0.89         5
+        RED BEARDED BEE EATER       1.00      1.00      1.00         5
+            RED BELLIED PITTA       1.00      1.00      1.00         5
+        RED BILLED TROPICBIRD       1.00      1.00      1.00         5
+             RED BROWED FINCH       1.00      0.80      0.89         5
+                RED CROSSBILL       1.00      1.00      1.00         5
+          RED FACED CORMORANT       1.00      1.00      1.00         5
+            RED FACED WARBLER       1.00      1.00      1.00         5
+                     RED FODY       1.00      1.00      1.00         5
+              RED HEADED DUCK       1.00      1.00      1.00         5
+        RED HEADED WOODPECKER       1.00      1.00      1.00         5
+                     RED KNOT       1.00      1.00      1.00         5
+      RED LEGGED HONEYCREEPER       1.00      0.80      0.89         5
+             RED NAPED TROGON       0.56      1.00      0.71         5
+          RED SHOULDERED HAWK       1.00      1.00      1.00         5
+              RED TAILED HAWK       0.56      1.00      0.71         5
+            RED TAILED THRUSH       1.00      1.00      1.00         5
+         RED WINGED BLACKBIRD       1.00      0.60      0.75         5
+          RED WISKERED BULBUL       1.00      1.00      1.00         5
+             REGENT BOWERBIRD       1.00      1.00      1.00         5
+         RING-NECKED PHEASANT       1.00      1.00      1.00         5
+                   ROADRUNNER       1.00      1.00      1.00         5
+                    ROCK DOVE       1.00      1.00      1.00         5
+       ROSE BREASTED COCKATOO       1.00      1.00      1.00         5
+       ROSE BREASTED GROSBEAK       1.00      1.00      1.00         5
+            ROSEATE SPOONBILL       1.00      0.80      0.89         5
+          ROSY FACED LOVEBIRD       1.00      1.00      1.00         5
+            ROUGH LEG BUZZARD       1.00      0.80      0.89         5
+             ROYAL FLYCATCHER       1.00      1.00      1.00         5
+         RUBY CROWNED KINGLET       0.83      1.00      0.91         5
+    RUBY THROATED HUMMINGBIRD       1.00      0.60      0.75         5
+               RUDDY SHELDUCK       1.00      1.00      1.00         5
+              RUDY KINGFISHER       1.00      1.00      1.00         5
+            RUFOUS KINGFISHER       1.00      0.80      0.89         5
+                 RUFOUS TREPE       1.00      1.00      1.00         5
+                RUFUOS MOTMOT       1.00      1.00      1.00         5
+              SAMATRAN THRUSH       1.00      1.00      1.00         5
+                  SAND MARTIN       1.00      0.80      0.89         5
+               SANDHILL CRANE       1.00      1.00      1.00         5
+               SATYR TRAGOPAN       1.00      1.00      1.00         5
+                  SAYS PHOEBE       0.67      0.80      0.73         5
+   SCARLET CROWNED FRUIT DOVE       1.00      1.00      1.00         5
+      SCARLET FACED LIOCICHLA       1.00      1.00      1.00         5
+                 SCARLET IBIS       1.00      1.00      1.00         5
+                SCARLET MACAW       1.00      1.00      1.00         5
+              SCARLET TANAGER       1.00      1.00      1.00         5
+                     SHOEBILL       1.00      1.00      1.00         5
+       SHORT BILLED DOWITCHER       0.67      0.80      0.73         5
+              SMITHS LONGSPUR       1.00      1.00      1.00         5
+                   SNOW GOOSE       1.00      1.00      1.00         5
+               SNOW PARTRIDGE       0.71      1.00      0.83         5
+                  SNOWY EGRET       1.00      1.00      1.00         5
+                    SNOWY OWL       1.00      1.00      1.00         5
+                 SNOWY PLOVER       1.00      0.80      0.89         5
+             SNOWY SHEATHBILL       0.80      0.80      0.80         5
+                         SORA       1.00      1.00      1.00         5
+             SPANGLED COTINGA       1.00      1.00      1.00         5
+                SPLENDID WREN       1.00      1.00      1.00         5
+        SPOON BILED SANDPIPER       0.80      0.80      0.80         5
+              SPOTTED CATBIRD       1.00      1.00      1.00         5
+       SPOTTED WHISTLING DUCK       0.83      1.00      0.91         5
+                SQUACCO HERON       1.00      1.00      1.00         5
+        SRI LANKA BLUE MAGPIE       1.00      1.00      1.00         5
+                 STEAMER DUCK       1.00      0.80      0.89         5
+      STORK BILLED KINGFISHER       1.00      1.00      1.00         5
+            STRIATED CARACARA       1.00      0.80      0.89         5
+                  STRIPED OWL       1.00      1.00      1.00         5
+             STRIPPED MANAKIN       1.00      1.00      1.00         5
+             STRIPPED SWALLOW       1.00      1.00      1.00         5
+                   SUNBITTERN       1.00      1.00      1.00         5
+              SUPERB STARLING       1.00      1.00      1.00         5
+                  SURF SCOTER       1.00      1.00      1.00         5
+            SWINHOES PHEASANT       1.00      1.00      1.00         5
+                   TAILORBIRD       1.00      1.00      1.00         5
+                TAIWAN MAGPIE       1.00      1.00      1.00         5
+                       TAKAHE       1.00      1.00      1.00         5
+                TASMANIAN HEN       1.00      1.00      1.00         5
+              TAWNY FROGMOUTH       0.62      1.00      0.77         5
+                    TEAL DUCK       1.00      0.80      0.89         5
+                    TIT MOUSE       1.00      1.00      1.00         5
+                      TOUCHAN       1.00      1.00      1.00         5
+            TOWNSENDS WARBLER       0.57      0.80      0.67         5
+                 TREE SWALLOW       1.00      0.80      0.89         5
+         TRICOLORED BLACKBIRD       1.00      1.00      1.00         5
+            TROPICAL KINGBIRD       0.80      0.80      0.80         5
+                TRUMPTER SWAN       1.00      1.00      1.00         5
+               TURKEY VULTURE       1.00      1.00      1.00         5
+             TURQUOISE MOTMOT       1.00      1.00      1.00         5
+                UMBRELLA BIRD       1.00      1.00      1.00         5
+                VARIED THRUSH       1.00      1.00      1.00         5
+                        VEERY       1.00      0.40      0.57         5
+         VENEZUELIAN TROUPIAL       0.83      1.00      0.91         5
+                       VERDIN       1.00      1.00      1.00         5
+          VERMILION FLYCATHER       0.83      1.00      0.91         5
+      VICTORIA CROWNED PIGEON       1.00      1.00      1.00         5
+       VIOLET BACKED STARLING       1.00      1.00      1.00         5
+                VIOLET CUCKOO       1.00      0.80      0.89         5
+         VIOLET GREEN SWALLOW       1.00      1.00      1.00         5
+                VIOLET TURACO       1.00      1.00      1.00         5
+             VISAYAN HORNBILL       1.00      0.80      0.89         5
+         VULTURINE GUINEAFOWL       1.00      1.00      1.00         5
+                 WALL CREAPER       1.00      1.00      1.00         5
+             WATTLED CURASSOW       1.00      1.00      1.00         5
+              WATTLED LAPWING       1.00      1.00      1.00         5
+                     WHIMBREL       1.00      1.00      1.00         5
+      WHITE BREASTED WATERHEN       1.00      1.00      1.00         5
+           WHITE BROWED CRAKE       1.00      1.00      1.00         5
+         WHITE CHEEKED TURACO       1.00      0.80      0.89         5
+       WHITE CRESTED HORNBILL       1.00      1.00      1.00         5
+      WHITE EARED HUMMINGBIRD       1.00      1.00      1.00         5
+           WHITE NECKED RAVEN       1.00      1.00      1.00         5
+          WHITE TAILED TROPIC       1.00      1.00      1.00         5
+     WHITE THROATED BEE EATER       1.00      1.00      1.00         5
+                  WILD TURKEY       1.00      1.00      1.00         5
+             WILLOW PTARMIGAN       1.00      0.80      0.89         5
+     WILSONS BIRD OF PARADISE       1.00      1.00      1.00         5
+                    WOOD DUCK       1.00      1.00      1.00         5
+                  WOOD THRUSH       0.83      1.00      0.91         5
+          WOODLAND KINGFISHER       1.00      1.00      1.00         5
+                      WRENTIT       1.00      1.00      1.00         5
+  YELLOW BELLIED FLOWERPECKER       1.00      1.00      1.00         5
+         YELLOW BREASTED CHAT       1.00      1.00      1.00         5
+               YELLOW CACIQUE       1.00      1.00      1.00         5
+      YELLOW HEADED BLACKBIRD       1.00      0.80      0.89         5
+                   ZEBRA DOVE       1.00      1.00      1.00         5
+
+                     accuracy                           0.95      2625
+                    macro avg       0.97      0.95      0.95      2625
+                 weighted avg       0.97      0.95      0.95      2625

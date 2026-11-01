@@ -1,0 +1,19 @@
+#!/bin/bash
+#SBATCH --account=curso04
+#SBATCH --nodes=1               # número de nodos
+#SBATCH --job-name=aves_tl      # nombre del trabajo
+#SBATCH --ntasks=1              # un solo proceso
+#SBATCH --cpus-per-task=32      # núcleos que puede usar TensorFlow
+#SBATCH --mem=32G               # memoria RAM
+#SBATCH --time=24:00:00         # tiempo máximo (el entrenamiento tardó ~56 minutos)
+#SBATCH --partition=cpu         # partición de CPU; las GPUs del clúster son AMD y requieren ROCm
+
+cd /lustre/home/estudiante_17/aves_tl
+
+echo "Corriendo en nodo: $(hostname)"
+
+# Ambiente de conda creado para esta tarea (ver tl_aves.yml)
+source /apps/miniconda3/etc/profile.d/conda.sh
+conda activate tl_aves
+
+python -u aves_tl.py Dataset_Aves

@@ -1,0 +1,9 @@
+.venv/
+datos_zip/
+Dataset_Aves/
+__pycache__/
+.idea/
+resultados/mejor_modelo.h5
+resultados/matriz_confusion.npy
+LEEME.md
+prueba_gpu.slrm

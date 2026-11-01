@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>¿Qué ave es?</title>
+  <link rel="icon" type="image/png" href="logo_unison.png">
+  <style>
+    :root {
+      --fondo: #f4f5f7;
+      --tarjeta: #ffffff;
+      --texto: #1c1f24;
+      --suave: #6b7280;
+      --borde: #e2e5ea;
+      --principal: #2563eb;
+      --texto-principal: #ffffff;
+      --barra: #0d9488;
+      --barra-suave: #99d5cf;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fondo: #111317;
+        --tarjeta: #1b1e24;
+        --texto: #eceef1;
+        --suave: #9aa1ac;
+        --borde: #2c3038;
+        --principal: #60a5fa;
+        --texto-principal: #0b1220;
+        --barra: #2dd4bf;
+        --barra-suave: #1f5f59;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--fondo);
+      color: var(--texto);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+    main { max-width: 560px; margin: 0 auto; padding: 16px; }
+    .encabezado { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+    .encabezado img { width: 110px; height: auto; flex-shrink: 0; }
+    @media (max-width: 420px) { .encabezado img { width: 90px; } }
+    .escuela { font-size: .75rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--suave); margin: 0; }
+    h1 { font-size: 1.35rem; margin: 2px 0 2px; }
+    .sub { color: var(--suave); font-size: .9rem; margin: 0; }
+    .tarjeta {
+      background: var(--tarjeta);
+      border: 1px solid var(--borde);
+      border-radius: 14px;
+      padding: 14px;
+      margin-bottom: 14px;
+    }
+    /* Visor cuadrado: aquí se ve la cámara o la foto */
+    #visor {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background: #000;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    #visor video, #visor canvas {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+    #visor .mensaje {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      text-align: center; padding: 20px;
+      color: #9aa1ac; font-size: .95rem;
+    }
+    /* Etiqueta en vivo encima de la cámara */
+    #etiqueta {
+      position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%);
+      max-width: 92%; overflow: hidden; text-overflow: ellipsis;
+      background: rgba(0, 0, 0, .65); color: #fff;
+      padding: 8px 16px; border-radius: 999px;
+      font-weight: 700; font-size: 1.05rem; white-space: nowrap;
+    }
+    .en-vivo {
+      position: absolute; top: 12px; left: 12px;
+      background: #dc2626; color: #fff;
+      font-size: .7rem; font-weight: 700; letter-spacing: .05em;
+      padding: 3px 8px; border-radius: 4px;
+    }
+    .oculto { display: none !important; }
+    .botones { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+    button, .boton {
+      font: inherit; font-weight: 600; text-align: center;
+      border: 0; border-radius: 10px;
+      padding: 14px 10px;
+      cursor: pointer;
+    }
+    button:disabled { opacity: .4; cursor: default; }
+    #btn-camara { background: var(--principal); color: var(--texto-principal); }
+    .boton { background: transparent; color: var(--texto); border: 1px solid var(--borde); }
+    #btn-camara.oculto + .boton { grid-column: 1 / -1; }   /* con la cámara abierta, "Subir foto" ocupa todo el ancho */
+    #estado { font-size: .85rem; color: var(--suave); margin-top: 10px; text-align: center; min-height: 1.2em; }
+    #resultado h2 { font-size: .8rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--suave); margin: 0 0 10px; }
+    .especie { margin-bottom: 12px; }
+    .especie .fila { display: flex; justify-content: space-between; gap: 10px; font-size: .95rem; margin-bottom: 4px; }
+    .especie .nombre { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .especie .pct { color: var(--suave); font-variant-numeric: tabular-nums; flex-shrink: 0; }
+    .especie .pista { height: 10px; border-radius: 5px; background: var(--borde); overflow: hidden; }
+    .especie .llena { height: 100%; border-radius: 5px; background: var(--barra-suave); transition: width .25s; }
+    .especie:first-of-type .nombre { font-weight: 800; font-size: 1.15rem; }
+    .especie:first-of-type .llena { background: var(--barra); }
+    .detalle { font-size: .78rem; color: var(--suave); margin-top: 6px; }
+  </style>
+</head>
+<body>
+<main>
+  <header class="encabezado">
+    <img src="logo_unison.png" alt="Escudo de la Universidad de Sonora">
+    <div>
+      <p class="escuela">Universidad de Sonora · Redes Neuronales</p>
+      <h1>¿Qué ave es? 🐦</h1>
+      <p class="sub">Apunta la cámara a un ave (o a una foto de una) y una MobileNetV2 con transferencia de aprendizaje te dice cuál de las 525 especies es.</p>
+    </div>
+  </header>
+
+  <section class="tarjeta">
+    <div id="visor">
+      <video id="video" playsinline muted class="oculto"></video>
+      <canvas id="foto" class="oculto"></canvas>
+      <div class="mensaje" id="mensaje-visor">Presiona «Abrir cámara» o sube una foto</div>
+      <span class="en-vivo oculto" id="en-vivo">● EN VIVO</span>
+      <div id="etiqueta" class="oculto"></div>
+    </div>
+    <div class="botones">
+      <button id="btn-camara" disabled>🎥 Abrir cámara</button>
+      <label class="boton">🖼️ Subir foto
+        <input type="file" id="archivo" accept="image/*" class="oculto">
+      </label>
+    </div>
+    <div id="estado">Cargando modelo…</div>
+  </section>
+
+  <section class="tarjeta oculto" id="resultado">
+    <h2>Las 3 especies más probables</h2>
+    <div id="top"></div>
+    <div class="detalle" id="r-detalle"></div>
+  </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.18.0/dist/tf.min.js"></script>
+<script>
+  // ---------- Configuración ----------
+  const TAMANO_IMG = 224;     //La red se entrenó con fotos de 224x224 a color
+  const TOP = 3;              //Cuántas especies se muestran
+  const MINIMO = 0.30;        //Si la más probable tiene menos de esto, la red no está segura
+
+  //Para que el resultado en vivo no "parpadee", se promedian las últimas predicciones
+  const PROMEDIAR = 5;
+  const MS_ENTRE_PREDICCIONES = 150;
+
+  let modelo = null;
+  let clases = [];
+  let enVivo = false;
+  let ultimas = [];
+
+  const video = document.getElementById("video");
+  const foto = document.getElementById("foto");
+  const estado = document.getElementById("estado");
+  const btnCamara = document.getElementById("btn-camara");
+
+  //Canvas escondido donde se recorta y achica la imagen a 224x224
+  const lienzo = document.createElement("canvas");
+  lienzo.width = lienzo.height = TAMANO_IMG;
+  const ctx = lienzo.getContext("2d", { willReadFrequently: true });
+
+  // ---------- Preprocesamiento ----------
+  //Se toma un recorte CUADRADO del centro (lo mismo que se ve en el visor) y se pasa a 224x224.
+  //Los pixeles van de 0 a 255 como en Python: el preprocess_input de MobileNetV2 ya viene dentro del modelo.
+  function preprocesar(fuente, ancho, alto) {
+    const lado = Math.min(ancho, alto);
+    ctx.imageSmoothingQuality = "high";
+    ctx.drawImage(fuente, (ancho - lado) / 2, (alto - lado) / 2, lado, lado, 0, 0, TAMANO_IMG, TAMANO_IMG);
+    return tf.tidy(() => tf.browser.fromPixels(lienzo).toFloat().expandDims(0));
+  }
+
+  // ---------- Predicción ----------
+  //Regresa las 525 probabilidades (el softmax se le agregó al exportar)
+  function predecir(fuente, ancho, alto) {
+    const entrada = preprocesar(fuente, ancho, alto);
+    const inicio = performance.now();
+    const salida = modelo.predict(entrada);
+    const probs = salida.dataSync();
+    const ms = performance.now() - inicio;
+    entrada.dispose();
+    salida.dispose();
+    return { probs, ms };
+  }
+
+  function mostrar(probs, ms) {
+    const orden = Array.from(probs.keys()).sort((a, b) => probs[b] - probs[a]).slice(0, TOP);
+    const seguro = probs[orden[0]] >= MINIMO;
+
+    document.getElementById("resultado").classList.remove("oculto");
+    document.getElementById("top").innerHTML = orden.map(i => `
+      <div class="especie">
+        <div class="fila"><span class="nombre">${clases[i]}</span><span class="pct">${(probs[i] * 100).toFixed(1)}%</span></div>
+        <div class="pista"><div class="llena" style="width:${(probs[i] * 100).toFixed(1)}%"></div></div>
+      </div>`).join("");
+    document.getElementById("r-detalle").textContent = seguro
+      ? `${ms.toFixed(0)} ms por predicción`
+      : `La red no está muy segura (menos de ${MINIMO * 100}%), puede que no sea un ave o no sea de las 525 especies · ${ms.toFixed(0)} ms`;
+
+    const etiqueta = document.getElementById("etiqueta");
+    etiqueta.classList.remove("oculto");
+    etiqueta.textContent = seguro ? `🐦 ${clases[orden[0]]}` : "🤔 No estoy seguro";
+  }
+
+  // ---------- Cámara EN VIVO ----------
+  async function abrirCamara() {
+    try {
+      //facingMode "environment" = cámara trasera del celular
+      const stream = await navigator.mediaDevices.getUserMedia({
+        video: { facingMode: "environment", width: { ideal: 640 }, height: { ideal: 640 } },
+        audio: false,
+      });
+      video.srcObject = stream;
+      await video.play();
+      video.classList.remove("oculto");
+      foto.classList.add("oculto");
+      document.getElementById("mensaje-visor").classList.add("oculto");
+      document.getElementById("en-vivo").classList.remove("oculto");
+      btnCamara.classList.add("oculto");
+      ultimas = [];
+      enVivo = true;
+      estado.textContent = "Apunta a un ave. Se reconoce en vivo.";
+      cicloEnVivo();
+    } catch (err) {
+      console.error(err);
+      estado.textContent = location.protocol === "https:" || location.hostname === "localhost"
+        ? "No se pudo abrir la cámara. Revisa que le diste permiso al navegador."
+        : "La cámara solo funciona con https. Mientras, puedes subir una foto.";
+    }
+  }
+
+  //Se repite varias veces por segundo mientras la cámara está abierta
+  function cicloEnVivo() {
+    if (!enVivo) return;
+    if (video.readyState >= 2) {
+      const { probs, ms } = predecir(video, video.videoWidth, video.videoHeight);
+      //Promedio de las últimas predicciones para que no brinque tanto
+      ultimas.push(probs);
+      if (ultimas.length > PROMEDIAR) ultimas.shift();
+      const promedio = new Float32Array(probs.length);
+      for (const p of ultimas) for (let i = 0; i < p.length; i++) promedio[i] += p[i] / ultimas.length;
+      mostrar(promedio, ms);
+    }
+    setTimeout(() => requestAnimationFrame(cicloEnVivo), MS_ENTRE_PREDICCIONES);
+  }
+
+  btnCamara.addEventListener("click", abrirCamara);
+
+  // ---------- Subir foto de la galería ----------
+  document.getElementById("archivo").addEventListener("change", e => {
+    const archivo = e.target.files[0];
+    if (!archivo || !modelo) return;
+    const img = new Image();
+    img.onload = () => {
+      //Si la cámara estaba abierta, se apaga para mostrar la foto
+      enVivo = false;
+      if (video.srcObject) { video.srcObject.getTracks().forEach(t => t.stop()); video.srcObject = null; }
+      video.classList.add("oculto");
+      document.getElementById("en-vivo").classList.add("oculto");
+      btnCamara.classList.remove("oculto");
+
+      //Mostrar la foto (recorte cuadrado del centro) en el visor
+      const lado = Math.min(img.naturalWidth, img.naturalHeight);
+      foto.width = lado; foto.height = lado;
+      foto.getContext("2d").drawImage(img, (img.naturalWidth - lado) / 2, (img.naturalHeight - lado) / 2, lado, lado, 0, 0, lado, lado);
+      foto.classList.remove("oculto");
+      document.getElementById("mensaje-visor").classList.add("oculto");
+
+      const { probs, ms } = predecir(img, img.naturalWidth, img.naturalHeight);
+      mostrar(probs, ms);
+      URL.revokeObjectURL(img.src);
+      estado.textContent = "Sube otra foto o vuelve a abrir la cámara.";
+    };
+    img.src = URL.createObjectURL(archivo);
+    e.target.value = "";   //Para poder subir la misma foto otra vez
+  });
+
+  // ---------- Cargar el modelo exportado y los nombres de las especies ----------
+  (async () => {
+    try {
+      [modelo, clases] = await Promise.all([
+        tf.loadGraphModel("modelo/model.json"),
+        fetch("clases.json").then(r => r.json()),
+      ]);
+      //Primera predicción "en vacío" para que la primera de verdad no sea lenta
+      tf.tidy(() => modelo.predict(tf.zeros([1, TAMANO_IMG, TAMANO_IMG, 3])));
+      btnCamara.disabled = false;
+      estado.textContent = "Modelo listo. Abre la cámara o sube una foto.";
+    } catch (err) {
+      console.error(err);
+      estado.textContent = "No se pudo cargar el modelo. ¿Está en la carpeta modelo/? ¿Abriste la página con un servidor?";
+    }
+  })();
+</script>
+</body>
+</html>
